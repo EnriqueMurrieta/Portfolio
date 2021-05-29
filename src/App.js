@@ -1,12 +1,12 @@
 import './App.css';
-import shagy from './images/shagy.jpg';
+import shagy from './images/shagy.jpg';/*
 import cuentas from './images/iphone.jpg';
 import cuentas2 from './images/cuentas.jpg';
-import bcmapa from './images/android.jpg';
+import bcmapa from './images/android.jpg';*/
 import principal from './images/principal.jpg';
 
 import trece from './images/capturas/13.PNG';
-import catorce from './images/capturas/14.jpg';
+import catorce from './images/capturas/14.jpg';/*
 import quince from './images/capturas/15.PNG';
 import dieciseis from './images/capturas/16.PNG';
 import diecisiete from './images/capturas/17.PNG';
@@ -16,10 +16,10 @@ import veinte from './images/capturas/20.PNG';
 import veintiuno from './images/capturas/21.PNG';
 import veintidos from './images/capturas/22.PNG';
 import veintitres from './images/capturas/23.PNG';
-import veinticuatro from './images/capturas/24.PNG';
+import veinticuatro from './images/capturas/24.PNG';*/
 
 import uno from './images/capturas/1.PNG';
-import dos from './images/capturas/2.PNG';
+import dos from './images/capturas/2.PNG';/*
 import tres from './images/capturas/3.PNG';
 import cuatro from './images/capturas/4.PNG';
 import cinco from './images/capturas/5.PNG';
@@ -29,11 +29,14 @@ import ocho from './images/capturas/8.PNG';
 import nueve from './images/capturas/9.PNG';
 import diez from './images/capturas/10.PNG';
 import once from './images/capturas/11.PNG';
-import doce from './images/capturas/12.PNG';
+import doce from './images/capturas/12.PNG';*/
 
 //CROSS BROWSER COMPATIBILITY
 
 function App() {
+  const verMas = () => {
+    console.log("Heeey")
+  }
   return (
     <div>
       <div className="big-image">
@@ -71,7 +74,42 @@ function App() {
                 <img className="capturas" src={trece} alt="13" />
                 <img className="capturas" src={catorce} alt="14" />
               </div>
-              <div className="capturasPacket">
+              
+          </div>
+          <div className="contained2">
+            <div className="title">
+              <h1>BCMapa</h1>
+            </div>
+            <div className="description">
+                <h3><i>V</i>isualiza una lista del Gobernador, ex Gobernadores, <br/>
+                  sus partidos políticos y periodos</h3>
+                <h3><i>D</i>entro de sus perfiles se encuentra: </h3>
+                  <h3>Predecesores, sucesores y partidos<br/>
+                  Experiencia pública (cargo y periodo)<br/>
+                  Ex partidos, educación superior y nacimiento</h3>
+            </div>
+            <div className="capturasPacket">
+                <img className="capturas" src={uno} alt="1" />
+                <img className="capturas" src={dos} alt="2" />
+            </div>
+            
+          </div>
+        </div>
+        <div className="verMas">
+          <button className="verMasBotton" onClick={verMas}>Ver más capturas</button>
+        </div>
+        <h1>Proximamente...</h1>
+        <h2>App de noticias</h2>
+        <h2>Refactorizacion de Cuentas y App de noticias con redux</h2>
+      </div>  
+    </div>
+  );
+}
+
+export default App;
+
+/*
+<div className="capturasPacket">
                 <img className="capturas" src={quince} alt="15" />
                 <img className="capturas" src={dieciseis} alt="16" />
               </div>
@@ -93,24 +131,10 @@ function App() {
               </div>
               <img src={cuentas2} alt="Enrique"/>
               <img src={cuentas} alt="Enrique"/>
-          </div>
-          <div className="contained2">
-            <div className="title">
-              <h1>BCMapa</h1>
-            </div>
-            <div className="description">
-                <h3><i>V</i>isualiza una lista del Gobernador, ex Gobernadores, <br/>
-                  sus partidos políticos y periodos</h3>
-                <h3><i>D</i>entro de sus perfiles se encuentra: </h3>
-                  <h3>Predecesores, sucesores y partidos<br/>
-                  Experiencia pública (cargo y periodo)<br/>
-                  Ex partidos, educación superior y nacimiento</h3>
-            </div>
-            <div className="capturasPacket">
-                <img className="capturas" src={uno} alt="1" />
-                <img className="capturas" src={dos} alt="2" />
-            </div>
-            <div className="capturasPacket">
+*/
+
+/*
+<div className="capturasPacket">
                 <img className="capturas" src={tres} alt="3" />
                 <img className="capturas" src={cuatro} alt="4" />
             </div>
@@ -131,14 +155,4 @@ function App() {
                 <img className="capturas" src={doce} alt="12" />
             </div>
             <img src={bcmapa} alt="Enrique"/>
-          </div>
-        </div>
-        <h1>Proximamente...</h1>
-        <h2>App de noticias</h2>
-        <h2>Refactorizacion de Cuentas y App de noticias con redux</h2>
-      </div>  
-    </div>
-  );
-}
-
-export default App;
+*/

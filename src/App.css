@@ -98,6 +98,42 @@
   /*position: -webkit-sticky.*/
 }
 
+.verMas {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  /*hover:*/
+}
+
+.verMasBotton {
+  background-color: gray;
+  border-radius: 5%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  height: 60px;
+  width: 210px;
+  line-height: 60px;
+  color: white;
+  font-size: large;
+}
+
+.verMasBotton:hover {
+  background-color: darkgray;
+  border-radius: 5%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  height: 60px;
+  width: 210px;
+  line-height: 60px;
+  color: white;
+  font-size: large;
+  cursor: pointer;
+}
 
 .bothApps {
   height: 45%;
