@@ -4,7 +4,7 @@
   position: relative;
   background-size: cover;
   background-position: 50% 50%;
-  background-image: url("./images/ReactNativeFirebase.png");
+  background-image: url("./images/RNF7.png");
 }
 
 .overlay {
@@ -21,10 +21,106 @@
   flex-direction: column;
 }
 
+.content {
+  background-color: cadetblue;
+}
+
+.overlay2 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
 .shags {
   height: 60%;
   width: 30%;
   border-radius: 50%;
+}
+
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color:beige;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-bottom: 2px solid black;
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 20px;
+  background-image: url("./images/RNF8.png");
+}
+
+.container2 {
+  display: flex;
+  align-items:flex-start;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-top: 0;
+}
+
+.contained2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contained2Left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-right: 2px solid yellow;
+}
+
+.category{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  position: sticky;
+  top: 0px;
+  background-color: cadetblue;
+  border-radius: 20px;
+  /*FOR DIFFERENT BROWSERS*/
+  /*position: -webkit-sticky.*/
+}
+
+
+.bothApps {
+  height: 45%;
+  width: 45%;
+  border-radius: 20px;
+}
+
+.description {
+  color:cornsilk;
+}
+
+.capturasPacket {
+  display: flex;
+  align-items:flex-start;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.capturas {
+  height: 45%;
+  width: 45%;
+  margin-bottom: 5%;
+  border-radius: 20px;
 }
 
 .App {
