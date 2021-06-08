@@ -4,7 +4,8 @@
   width: 100vw;*/
   /*width: 'device-width';
   height: 'device-height';*/
-  width: 100vw;
+  width: 100%;
+  top: 0;
   /*width: '100%';
   height: '100%';*/
   /*position: relative;*/
@@ -19,6 +20,7 @@
 
 .overlay {
   position: absolute;
+  margin-top: 0;
   height: 100%;
   width: 100%;
   top: 0;
@@ -30,6 +32,12 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.fitter{
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .fab {
@@ -89,6 +97,11 @@ button {
   font-size: 2em;
 }
 
+.socialNetwork2 {
+  margin-top: 0;
+  font-size: 0.5em;
+}
+
 .socialEmail{
   font-size: 2em;
 }
@@ -100,18 +113,23 @@ button {
   position: relative;
   background-size: cover;
   background-position: 50% 50%;
+  /*text-align: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  justify-content: center;*/
 }
-/*
+
 .contentOverlay {
   position: relative;
   height: 100%;
   width: 100%;
-  top: 0;
-  left: 0;
+  /*top: 0;
+  left: 0;*/
   background: rgba(0, 0, 0, 0.65);
   color: white;
 }
-*/
+
 
 .overlay2 {
   position: relative;
@@ -157,19 +175,19 @@ button {
   margin-top: 0;
 }
 
-.contained2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .contained2Left {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   border-right: 0.5vw solid yellow;
+}
+
+.contained2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .category{
@@ -254,6 +272,21 @@ button {
   margin: 5vw;
 }
 
+@media (max-height: 432px) {
+  .socialNetwork{
+    margin-top: 0;
+    font-size: 0.25em;
+  }
+  
+  .social {
+    height: 1.6em;
+    width: 4.5em;
+    border-radius: 15em;
+    margin-bottom: 0;
+    font-size: 2em;
+  }
+}
+
 @media (max-width: 400px){
   .info {
     float:left;
@@ -277,6 +310,16 @@ button {
     border-radius: 1rem;
   }
 }
+/*
+@media (max-width: 780px) {
+  .info {
+    float:left;
+    color: white;
+    max-width: 100%;
+    overflow-x: scroll;
+    font-size: 0.70rem;
+  }
+}*/
 
 @media (min-width: 400px) {
   .verMasBotton {
@@ -299,6 +342,10 @@ button {
   border-radius: 1rem;
 }
 
+.footNotePacket {
+  text-align: center;
+}
+
 .footNote {
   margin-bottom: 2rem;
   border-bottom: 2px solid black;
@@ -307,8 +354,10 @@ button {
 }
 
 .info {
+  margin-left: 0;
   float:left;
   color: white;
+  overflow-x: scroll;
 }
 /*
 li { display: inline-block; font-size: 16px;}

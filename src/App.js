@@ -49,23 +49,25 @@ function App() {
   const [verTechG, onVerTechG] = React.useState(false);
   const [botonTechG, onBotonTechG] = React.useState("General Tech Specs");
 
+  const [verMasTest, onVerMasTest] = React.useState(true);
+
   const verMasFunction = () => {
-    boton == "Ver menos" ? onBoton("Ver más capturas") : onBoton("Ver menos");
+    boton === "Ver menos" ? onBoton("Ver más capturas") : onBoton("Ver menos");
     onVerMas(!verMas);
   }
 
   const verTechFunction = () => {
-    botonTech == "Ver menos" ? onBotonTech("Ver Tech Specs") : onBotonTech("Ver menos");
+    botonTech === "Ver menos" ? onBotonTech("Ver Tech Specs") : onBotonTech("Ver menos");
     onVerTech(!verTech);
   }
 
   const verTechFunction2 = () => {
-    botonTech2 == "Ver menos" ? onBotonTech2("Ver Tech Specs") : onBotonTech2("Ver menos");
+    botonTech2 === "Ver menos" ? onBotonTech2("Ver Tech Specs") : onBotonTech2("Ver menos");
     onVerTech2(!verTech2);
   }
 
   const verTechFunctionG = () => {
-    botonTechG == "Ver menos" ? onBotonTechG("General Tech Specs") : onBotonTechG("Ver menos");
+    botonTechG === "Ver menos" ? onBotonTechG("General Tech Specs") : onBotonTechG("Ver menos");
     onVerTechG(!verTechG);
   }
 
@@ -77,30 +79,36 @@ function App() {
     window.open("https://www.linkedin.com/in/enrique-murrieta-acu%C3%B1a-a04231123/", "_blank");
   }
 
+  const verTest = () => {
+    onVerMasTest(!verMasTest)
+  }
+
   return (
     <div>
       <div className="big-image">
         <div className="overlay">
-          <h1>Murrieta Acuña, Esteban Enrique</h1>
-          <h2>Desarrollador Móvil</h2>
-          <div className="socialPacket">
-            <div className="socialEmail">
-              <FontAwesomeIcon icon={faInbox} />
+          <div className="fitter">
+            <h1>Murrieta Acuña, Esteban Enrique</h1>
+            <h2>Desarrollador Móvil</h2>
+            <div className="socialPacket">
+              <div className="socialEmail">
+                <FontAwesomeIcon icon={faInbox} />
+              </div>
             </div>
-          </div>
-          <p>enrique_murrieta@hotmail.com</p>
-          <div className="socialPacket">
-            <button className="social" onClick={gitHub}>
-              <FontAwesomeIcon icon={faGithub} />
-              <p className="socialNetwork">GitHub</p>
-            </button>
-          </div>
-          <div className="socialPacket">
-            <button className="social" onClick={linkedIn}>
-              <FontAwesomeIcon icon={faLinkedin} />
-              <p className="socialNetwork">LinkedIn</p>
-            </button>
-          </div>
+            <p>enrique_murrieta@hotmail.com</p>
+            <div className="socialPacket">
+              <button className="social" onClick={gitHub}>
+                <FontAwesomeIcon icon={faGithub} />
+                <p className="socialNetwork">GitHub</p>
+              </button>
+            </div>
+            <div className="socialPacket">
+              <button className="social" onClick={linkedIn}>
+                <FontAwesomeIcon icon={faLinkedin} />
+                <p className="socialNetwork">LinkedIn</p>
+              </button>
+            </div>
+          </div>  
         </div>
       </div>
       <div className="content">
@@ -197,6 +205,17 @@ function App() {
                   <img className="capturas" src={veinticuatro} alt="24" />
                 </div>
                 <p className="footNote">(2 / 12)</p>
+                {verMasTest ?
+                  <div>
+                    <div className="capturasPacket">
+                      <img className="capturas" src={veintitres} alt="23" />
+                      <img className="capturas" src={veinticuatro} alt="24" />
+                    </div>
+                    <div className="footNotePacket">
+                      <p className="footNote">(2 / 12)</p>
+                    </div>
+                  </div> 
+                : null }
             </div>
             <div className="contained2">
               <div className="title">
@@ -260,6 +279,18 @@ function App() {
                   <img className="capturas" src={dos} alt="2" />
               </div>
               <p className="footNote">(2 / 12)</p>
+              {verMasTest ?
+                  <div>
+                    <div className="capturasPacket">
+                      <img className="capturas" src={veintitres} alt="1" />
+                      <img className="capturas" src={veinticuatro} alt="2" />
+                    </div>
+                    <div className="footNotePacket">
+                      <p className="footNote">(2 / 12)</p>
+                    </div>
+                  </div> 
+                : null }
+
             </div>
           </div>
           {verMas ? 
@@ -330,6 +361,7 @@ function App() {
           : 
             null
           }
+            <button onClick={verTest}>Test</button>
             <div className="verMas">
                 <button className="verMasBotton" onClick={verMasFunction}>{boton}</button>
               </div>
@@ -413,7 +445,7 @@ function App() {
             </li>
             <li>
               <div className="prox">
-                <h1>Refactorización de Cuentas y App de noticias con <bold>Redux</bold></h1>
+                <h1>Refactorización de Cuentas y App de noticias con Redux</h1>
               </div>
             </li>
           </ul>
@@ -422,11 +454,11 @@ function App() {
       <div className="fab">
         <button className="socialFixed" onClick={gitHub}>
           <FontAwesomeIcon icon={faGithub} />
-          <p className="socialNetwork">GitHub</p>
+          <p className="socialNetwork2">GitHub</p>
         </button>
         <button className="socialFixed" onClick={linkedIn}>
           <FontAwesomeIcon icon={faLinkedin} />
-          <p className="socialNetwork">LinkedIn</p>
+          <p className="socialNetwork2">LinkedIn</p>
         </button>
       </div>  
     </div>
