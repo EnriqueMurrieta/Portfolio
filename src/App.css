@@ -270,6 +270,21 @@ button {
   }
 }
 
+@media (max-width: 450px) {
+  .capturasPacket {
+    /*display: flex;*/
+    /*align-items:flex-start;*/
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .capturas {
+    height: 60%;
+    width: 60%;
+    border-radius: 1rem;
+  }
+}
+
 .capturasPacket {
   display: flex;
   align-items:flex-start;
