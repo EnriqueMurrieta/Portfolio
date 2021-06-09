@@ -55,10 +55,12 @@
 .socialFixed{
   height: 100%;
   width: 100%;
-  border-radius: 50%;
+  border-radius: 100%;
   font-size: 2em;
   align-self: flex-end;
   margin: 3%;
+  background-color: gray;
+  color: white;
 }
 
 button {
@@ -76,6 +78,8 @@ button {
   border-radius: 15em;
   margin-bottom: 0;
   font-size: 2em;
+  background-color: gray;
+  color: white;
 }
 
 .socialNetwork2 {
@@ -160,6 +164,7 @@ button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border-left: 0.5vw solid yellow;
 }
 
 .category{
@@ -241,6 +246,7 @@ button {
     border-radius: 15em;
     margin-bottom: 0;
     font-size: 2em;
+    background-color: gray;
   }
 
   .socialPacketFather{
