@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import shagy from './images/shagy.jpg';
 import cuentas from './images/iphone.jpg';
@@ -40,6 +40,10 @@ import { faInbox } from '@fortawesome/free-solid-svg-icons'
 //CROSS BROWSER COMPATIBILITY
 
 function App() {
+  useEffect(() => {
+    document.title = "Murrieta Acuña, Esteban Enrique"
+  })
+
   const [verMas, onVerMas] = React.useState(false);
   const [boton, onBoton] = React.useState("Ver más capturas");
   const [verTech, onVerTech] = React.useState(false);
@@ -152,17 +156,19 @@ function App() {
               </div>
             </div>
             <p>enrique_murrieta@hotmail.com</p>
-            <div className="socialPacket">
-              <button className="social" onClick={gitHub}>
-                <FontAwesomeIcon icon={faGithub} />
-                <p className="socialNetwork">GitHub</p>
-              </button>
-            </div>
-            <div className="socialPacket">
-              <button className="social" onClick={linkedIn}>
-                <FontAwesomeIcon icon={faLinkedin} />
-                <p className="socialNetwork">LinkedIn</p>
-              </button>
+            <div className="socialPacketFather">
+              <div className="socialPacket">
+                <button className="social" onClick={gitHub}>
+                  <FontAwesomeIcon icon={faGithub} />
+                  <p className="socialNetwork">GitHub</p>
+                </button>
+              </div>
+              <div className="socialPacket">
+                <button className="social" onClick={linkedIn}>
+                  <FontAwesomeIcon icon={faLinkedin} />
+                  <p className="socialNetwork">LinkedIn</p>
+                </button>
+              </div>
             </div>
           </div>  
         </div>
@@ -260,35 +266,35 @@ function App() {
                   <img className="capturas" src={veintitres} alt="23" />
                   <img className="capturas" src={veinticuatro} alt="24" />
                 </div>
-                <p className="footNote">(2 / 12)</p>
+                <p className="footNote">(2 / 11)</p>
                 {verMas ?
                   <div>
                     <div className="capturasPacket">
                       <img className="capturas" src={trece} alt="13" />
                       <img className="capturas" src={catorce} alt="14" />
                     </div>
-                    <p className="footNote">(4 / 12)</p>
+                    <p className="footNote">(4 / 11)</p>
                     {verMas2 ? 
                       <div>
                         <div className="capturasPacket">
                           <img className="capturas" src={quince} alt="15" />
                           <img className="capturas" src={dieciseis} alt="16" />
                         </div>
-                        <p className="footNote">(6 / 12)</p>
+                        <p className="footNote">(6 / 11)</p>
                         {verMas3 ? 
                           <div>
                             <div className="capturasPacket">
                               <img className="capturas" src={diecisiete} alt="17" />
                               <img className="capturas" src={diecinueve} alt="19" />
                             </div>
-                            <p className="footNote">(8 / 12)</p>
+                            <p className="footNote">(8 / 11)</p>
                             {verMas4 ? 
                               <div>
                                 <div className="capturasPacket">
                                   <img className="capturas" src={veinte} alt="20" />
                                   <img className="capturas" src={veintiuno} alt="21" />
                                 </div>
-                                <p className="footNote">(10 / 12)</p>
+                                <p className="footNote">(10 / 11)</p>
                                 {verMas5 ? 
                                   <div>
                                     <div className="capturasPacket">
@@ -380,32 +386,32 @@ function App() {
                     {verMas2 ? 
                       <div>
                         <div className="capturasPacket">
-                          <img className="capturas" src={quince} alt="15" />
-                          <img className="capturas" src={dieciseis} alt="16" />
+                          <img className="capturas" src={cinco} alt="5" />
+                          <img className="capturas" src={seis} alt="6" />
                         </div>
                         <p className="footNote">(6 / 12)</p>
                         {verMas3 ? 
                           <div>
                             <div className="capturasPacket">
-                              <img className="capturas" src={diecisiete} alt="17" />
-                              <img className="capturas" src={diecinueve} alt="19" />
+                              <img className="capturas" src={siete} alt="7" />
+                              <img className="capturas" src={ocho} alt="8" />
                             </div>
                             <p className="footNote">(8 / 12)</p>
                             {verMas4 ? 
                               <div>
                                 <div className="capturasPacket">
-                                  <img className="capturas" src={veinte} alt="20" />
-                                  <img className="capturas" src={veintiuno} alt="21" />
+                                  <img className="capturas" src={nueve} alt="9" />
+                                  <img className="capturas" src={diez} alt="10" />
                                 </div>
                                 <p className="footNote">(10 / 12)</p>
                                 {verMas5 ? 
                                   <div>
                                     <div className="capturasPacket">
-                                      <img className="capturas" src={veintidos} alt="22" />
+                                      <img className="capturas" src={once} alt="11" />
+                                      <img className="capturas" src={doce} alt="12" />
                                     </div>
-                                    <p className="footNote">(11 / 11)</p>
-                                    <img src={cuentas2} alt="Enrique"/>
-                                    <img src={cuentas} alt="Enrique"/>
+                                    <p className="footNote">(12 / 12)</p>
+                                    <img src={bcmapa} alt="Enrique"/>
                                   </div> 
                                 : null}
                               </div> 
