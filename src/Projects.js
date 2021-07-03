@@ -86,11 +86,11 @@ function Projects() {
                   <h1>Cuentas</h1>
                 </div>
                   <div className="description">
-                    <h3><i>I</i>nicia sesión con Google</h3>
-                    <h3><i>R</i>ealiza proyectos de contabilidad con tus cuentas T</h3>
-                    <h3><i>P</i>resiona guardar</h3>
-                    <h3><i>A</i>ccede a todos tus proyectos guardados</h3>
-                    <h3><i>L</i>os proyectos son guardados en la nube de Google</h3>
+                    <h3><i>L</i>ogin with Google</h3>
+                    <h3><i>D</i>o accounting projects with your T accounts</h3>
+                    <h3><i>P</i>ress Save</h3>
+                    <h3><i>A</i>ccess to your saved projects</h3>
+                    <h3><i>P</i>rojects are stored in Google Cloud with 1 click</h3>
                   </div>
                   {verTech ?
                     <div>
@@ -213,12 +213,12 @@ function Projects() {
                   <h1>BCMapa</h1>
                 </div>
                 <div className="description">
-                    <h3><i>V</i>isualiza una lista del Gobernador, ex Gobernadores, <br/>
-                      sus partidos políticos y periodos</h3>
-                    <h3><i>D</i>entro de sus perfiles se encuentra: </h3>
-                      <h3>Predecesores, sucesores y partidos<br/>
-                      Experiencia pública (cargo y periodo)<br/>
-                      Ex partidos, educación superior y nacimiento</h3>
+                    <h3><i>V</i>isualize a list of the Governor, ex Governors, <br/>
+                      their political parties and periods</h3>
+                    <h3><i>F</i>ind in their profiles: </h3>
+                      <h3>Predecessors, successors and parties<br/>
+                      public experience (position and period)<br/>
+                      Ex parties, education and date of birth</h3>
                 </div>
                 {verTech2 ?
                     <div>
@@ -321,22 +321,22 @@ function Projects() {
               <div> 
                 {verMas5 ? 
                   <div className="verMas">
-                    <button className="verMasBotton" onClick={verMenos}>Ver menos</button>
+                    <button className="verMasBotton" onClick={verMenos}>Less screenshots</button>
                   </div> 
                 : 
                   <div>
                     <div className="verMas">
-                      <button className="verMasBotton" onClick={verMasFunction1}>Ver más capturas</button>
+                      <button className="verMasBotton" onClick={verMasFunction1}>More screenshots</button>
                     </div>
                     <div className="verMas">
-                      <button className="verMasBotton" onClick={verMenos}>Ver menos</button>
+                      <button className="verMasBotton" onClick={verMenos}>Less screenshots</button>
                     </div>
                   </div>
                 }
               </div>  
             : 
               <div className="verMas">
-                <button className="verMasBotton" onClick={verMasFunction1}>Ver más capturas</button>
+                <button className="verMasBotton" onClick={verMasFunction1}>More screenshots</button>
               </div>
             }
             {verTechG ?
@@ -409,17 +409,17 @@ function Projects() {
               </div>
             }
             <div className="category">
-              <h1>Proximamente</h1>
+              <h1>Coming soon</h1>
             </div>
             <ul>
             <li>
               <div className="prox">
-                <h1>App de noticias</h1>
+                <h1>News App</h1>
               </div>
             </li>
             <li>
               <div className="prox">
-                <h1>Refactorización de Cuentas y App de noticias con Redux</h1>
+                <h1>Cuentas and App refactor with Redux</h1>
               </div>
             </li>
           </ul>
@@ -428,3 +428,24 @@ function Projects() {
 }
 
 export default Projects;
+
+/*
+<div className="description">
+                    <h3><i>I</i>nicia sesión con Google</h3>
+                    <h3><i>R</i>ealiza proyectos de contabilidad con tus cuentas T</h3>
+                    <h3><i>P</i>resiona guardar</h3>
+                    <h3><i>A</i>ccede a todos tus proyectos guardados</h3>
+                    <h3><i>L</i>os proyectos son guardados en la nube de Google</h3>
+                  </div>
+*/
+
+/*
+<div className="description">
+                    <h3><i>V</i>isualiza una lista del Gobernador, ex Gobernadores, <br/>
+                      sus partidos políticos y periodos</h3>
+                    <h3><i>D</i>entro de sus perfiles se encuentra: </h3>
+                      <h3>Predecesores, sucesores y partidos<br/>
+                      Experiencia pública (cargo y periodo)<br/>
+                      Ex partidos, educación superior y nacimiento</h3>
+                </div>
+*/

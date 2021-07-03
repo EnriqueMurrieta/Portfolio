@@ -19,7 +19,7 @@ function Header() {
             <div className="overlay">
             <div className="fitter">
                 <h1>Murrieta Acuña, Esteban Enrique</h1>
-                <h2>Desarrollador Móvil</h2>
+                <h2>Mobile Developer</h2>
                 <div className="socialPacket">
                 <div className="socialEmail">
                     <FontAwesomeIcon icon={faInbox} />

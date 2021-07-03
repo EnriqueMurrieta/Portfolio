@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
 import Middle from './Middle';
-import Projects from './Projects';
+import MainMenu from './MainMenu';
 
 function Content () {
     return(
         <div className="content">
             <div className="contentOverlay">
                 <Middle/>
-                <Projects/>
+                <MainMenu/>
             </div>
         </div>
     )
