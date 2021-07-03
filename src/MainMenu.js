@@ -35,7 +35,7 @@ function MainMenu () {
                 <button className={`mainMenu${pressedTechs}`} onClick={technologiesPress}>Technologies</button>
             </div>
             {
-                projects == true ? <Projects/> :
+                projects === true ? <Projects/> :
                     <div>
                         {
                             technologies ? <Technologies/> : <div className="emptySpace"></div> 
