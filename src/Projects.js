@@ -28,12 +28,6 @@ import doce from './images/capturas/12.PNG';
 
 function Projects() {
     const [verMas, onVerMas] = React.useState(false);
-    const [verTech, onVerTech] = React.useState(false);
-    const [botonTech, onBotonTech] = React.useState("Ver Tech Specs");
-    const [verTech2, onVerTech2] = React.useState(false);
-    const [botonTech2, onBotonTech2] = React.useState("Ver Tech Specs");
-    const [verTechG, onVerTechG] = React.useState(false);
-    const [botonTechG, onBotonTechG] = React.useState("General Tech Specs");
     const [verMas2, onVerMas2] = React.useState(false);
     const [verMas3, onVerMas3] = React.useState(false);
     const [verMas4, onVerMas4] = React.useState(false);
@@ -61,20 +55,6 @@ function Projects() {
         onVerMas5(false)
     }
 
-    const verTechFunction = () => {
-        botonTech === "Ver menos" ? onBotonTech("Ver Tech Specs") : onBotonTech("Ver menos");
-        onVerTech(!verTech);
-    }
-
-    const verTechFunction2 = () => {
-        botonTech2 === "Ver menos" ? onBotonTech2("Ver Tech Specs") : onBotonTech2("Ver menos");
-        onVerTech2(!verTech2);
-    }
-
-    const verTechFunctionG = () => {
-        botonTechG === "Ver menos" ? onBotonTechG("General Tech Specs") : onBotonTechG("Ver menos");
-        onVerTechG(!verTechG);
-    }
     return(
         <div>
             <div className="category">
@@ -92,72 +72,6 @@ function Projects() {
                     <h3><i>A</i>ccess to your saved projects</h3>
                     <h3><i>P</i>rojects are stored in Google Cloud with 1 click</h3>
                   </div>
-                  {verTech ?
-                    <div>
-                      <div className="verMas">
-                        <button className="verMasBotton" onClick={verTechFunction}>{botonTech}</button>
-                      </div>
-                      <div className="info">
-                        <ul className="infoUl">
-                        <li>React</li>
-                        <ul>
-                          <li>Component</li>
-                          <ul>
-                            <li>Functional</li>
-                            <ul>
-                              <li>Hooks</li>
-                              <ul>
-                                <li>useState</li>
-                                <li>useEffect</li>
-                                <li>useLayoutEffect</li>
-                              </ul>
-                            </ul>
-                            <li>Classes</li>
-                            <ul>
-                              <li>Constructor</li>
-                              <li>Lifecycle methods</li>
-                              <ul>
-                                <li>componentDidMount</li>
-                              </ul>
-                            </ul>
-                          </ul>
-                        </ul>
-                        <li>React Native</li>
-                        <ul>
-                          <li>React Navigation</li>
-                          <ul>
-                            <li>NavigationContainer</li>
-                            <li>CreateStackNavigator</li>
-                            <ul>
-                              <li>Stack.Navigator</li>
-                              <li>Stack.Screen</li>
-                            </ul>
-                            <li>CommonActions</li>
-                            <ul>
-                              <li>reset</li>
-                            </ul>
-                            <li>SetOptions</li>
-                          </ul>
-                          <li>View, Stylesheet, Text, SafeAreaView, ScrollView, Image, TextInput, TouchableOpacity, Button</li>
-                          <li>React Native Elements</li>
-                        </ul>
-                        <li>Expo.io</li>
-                        <li>Firebase</li>
-                        <ul>
-                          <li>Firestore Database</li>
-                          <li>Authentication</li>
-                          <ul>
-                            <li>Google</li>
-                          </ul>
-                        </ul>
-                      </ul>
-                      </div>
-                    </div>
-                  :
-                    <div className="verMas">
-                      <button className="verMasBotton" onClick={verTechFunction}>{botonTech}</button>
-                    </div>
-                } 
                   <div className="capturasPacket">
                     <img className="capturas" src={veintitres} alt="23" />
                     <img className="capturas" src={veinticuatro} alt="24" />
@@ -220,51 +134,6 @@ function Projects() {
                       public experience (position and period)<br/>
                       Ex parties, education and date of birth</h3>
                 </div>
-                {verTech2 ?
-                    <div>
-                      <div className="verMas">
-                        <button className="verMasBotton" onClick={verTechFunction2}>{botonTech2}</button>
-                      </div>
-                      <div className="info">
-                        <ul className="infoUl">
-                        <li>React</li>
-                        <ul>
-                          <li>Component</li>
-                          <ul>
-                            <li>Classes</li>
-                            <ul>
-                              <li>Constructor</li>
-                            </ul>
-                          </ul>
-                        </ul>
-                        <li>React Native</li>
-                        <ul>
-                          <li>React Navigation</li>
-                          <ul>
-                            <li>NavigationContainer</li>
-                            <li>CreateStackNavigator</li>
-                            <ul>
-                              <li>Stack.Navigator</li>
-                              <li>Stack.Screen</li>
-                            </ul>
-                          </ul>
-                          <li>FlatList</li>
-                          <ul>
-                            <li>listHeaderComponent</li>
-                            <li>renderItem</li>
-                          </ul>
-                          <li>View, Stylesheet, Text, SafeAreaView, ScrollView, Image, TouchableOpacity, Button</li>
-                          <li>React Native Elements</li>
-                        </ul>
-                        <li>Expo.io</li>
-                      </ul>
-                      </div>
-                    </div>
-                  :
-                    <div className="verMas">
-                      <button className="verMasBotton" onClick={verTechFunction2}>{botonTech2}</button>
-                    </div>
-                }
                 <div className="capturasPacket">
                     <img className="capturas" src={uno} alt="1" />
                     <img className="capturas" src={dos} alt="2" />
@@ -337,75 +206,6 @@ function Projects() {
             : 
               <div className="verMas">
                 <button className="verMasBotton" onClick={verMasFunction1}>More screenshots</button>
-              </div>
-            }
-            {verTechG ?
-              <div>
-                <div className="verMas">
-                  <button className="verMasBotton" onClick={verTechFunctionG}>{botonTechG}</button>
-                </div>
-                <ul className="infoGeneral">
-                  <li>React</li>
-                  <ul>
-                    <li>Component</li>
-                    <ul>
-                      <li>Functional</li>
-                      <ul>
-                        <li>Hooks</li>
-                        <ul>
-                          <li>useState</li>
-                          <li>useEffect</li>
-                          <li>useLayoutEffect</li>
-                        </ul>
-                      </ul>
-                      <li>Classes</li>
-                      <ul>
-                        <li>Constructor</li>
-                        <li>Lifecycle methods</li>
-                        <ul>
-                          <li>componentDidMount</li>
-                        </ul>
-                      </ul>
-                    </ul>
-                  </ul>
-                  <li>React Native</li>
-                  <ul>
-                    <li>React Navigation</li>
-                    <ul>
-                      <li>NavigationContainer</li>
-                      <li>CreateStackNavigator</li>
-                      <ul>
-                        <li>Stack.Navigator</li>
-                        <li>Stack.Screen</li>
-                      </ul>
-                      <li>CommonActions</li>
-                      <ul>
-                        <li>reset</li>
-                      </ul>
-                      <li>SetOptions</li>
-                    </ul>
-                    <li>FlatList</li>
-                      <ul>
-                        <li>listHeaderComponent</li>
-                        <li>renderItem</li>
-                      </ul>
-                    <li>View, Stylesheet, Text, SafeAreaView, ScrollView, Image, TextInput, TouchableOpacity, Button</li>
-                    <li>React Native Elements</li>
-                  </ul>
-                  <li>Expo.io</li>
-                  <li>Firebase</li>
-                  <ul>
-                    <li>Firestore Database</li>
-                    <li>Authentication</li>
-                    <ul>
-                      <li>Google</li>
-                    </ul>
-                  </ul>
-                </ul>
-              </div>
-            :
-              <div className="verMas">
-                <button className="verMasBotton" onClick={verTechFunctionG}>{botonTechG}</button>
               </div>
             }
             <div className="category">
