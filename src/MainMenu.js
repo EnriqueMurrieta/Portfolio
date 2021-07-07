@@ -4,10 +4,10 @@ import Projects from './Projects';
 import Technologies from './Technologies';
 
 function MainMenu () {
-    const [projects, onProjects] = React.useState(false);
+    const [projects, onProjects] = React.useState(true);
     const [technologies, onTechnologies] = React.useState(false);
 
-    const [pressedProjects, onPressedProjects] = React.useState("Button");
+    const [pressedProjects, onPressedProjects] = React.useState("ButtonPressed");
     const [pressedTechs, onPressedTechs] = React.useState("Button");
 
     const projectPress = () => {
@@ -16,6 +16,10 @@ function MainMenu () {
             onTechnologies(false)
             onPressedProjects("ButtonPressed")
             onProjects(true)
+            window.scrollTo({
+                top: 550,
+                behavior: 'smooth'
+            });
         }
     }
 
@@ -25,6 +29,10 @@ function MainMenu () {
             onProjects(false)
             onPressedTechs("ButtonPressed")
             onTechnologies(true)
+            window.scrollTo({
+                top: 550,
+                behavior: 'smooth'
+            });
         }
     }
 
